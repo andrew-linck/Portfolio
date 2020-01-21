@@ -1,0 +1,267 @@
+html {
+  background-image: url('../../assets/images/Pattern.png');
+  background-color: lightgray;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Arial;
+}
+
+header {
+  height: 80px;
+  background-color: white;
+  top: 0;
+  position: fixed;
+  display: table;
+  width: 100%;
+  border-bottom: 2px solid gainsboro;
+  z-index: 1;
+}
+
+#name {
+  background-color: lightseagreen;
+  margin-left: 150px;
+  padding-top: 20px;
+  width: 250px;
+  height: 60px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  float: left;
+  font-family: Cambria;
+  font-weight: 550;
+}
+
+#nav {
+  list-style: none;
+  float: right;
+  padding-right: 120px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin: 0;
+}
+
+.links {
+  text-decoration: none;
+  color: silver;
+  font-size: 18px;
+  margin-right: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#about-link, #portfolio-link {
+  padding-right: 20px;
+  border-right: 1px solid silver;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding: 130px 0 64px 0;
+}
+
+#content {
+  width: 820px;
+  margin: auto;
+  border: 1px solid silver;
+  padding: 5px 25px 25px 25px;
+  background-color: white;
+}
+
+#content-title {
+  font-family: Cambria;
+  color: lightseagreen;
+}
+
+img {
+  padding: 0 15px 15px 0;
+  float: left;
+  height: 100px;
+}
+
+.about-paragraph {
+  color: gray;
+}
+
+hr {
+  margin-bottom: 26px;
+  border: 2px solid silver;
+}
+
+#image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.banner {
+  width: 100%;
+  text-align: center;
+  padding: 11px 0;
+  color: white;
+  background-color: lightseagreen;
+  position: absolute;
+  bottom: 10px;
+}
+
+.portfolio-image {
+  height: 200px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+#portfolio-image-survey {
+  background-image: url('../../assets/images/Survey.png');
+}
+
+#portfolio-image-muugle {
+  background-image: url('../../assets/images/Muugle.png');
+}
+
+#portfolio-image-picaxel {
+  background-image: url('../../assets/images/Picaxel.png');
+}
+
+#portfolio-image-rock-paper-scissors {
+  background-image: url('../../assets/images/RPS.png');
+}
+
+#contact {
+  color: silver;
+}
+
+input[type=text], textarea[type=text] {
+  width: 97.5%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid silver;
+}
+
+input[type=text]::placeholder {
+  opacity: .8;
+}
+
+input[type=submit] {
+  font-size: 13px;
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  color: rgb(200,200,200);
+  padding-top: 30px;
+  border-top: 4px solid lightseagreen;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  height: 30px;
+}
+
+@media only screen and (max-width: 430px) {
+    #name {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    #nav {
+      list-style: none;
+      text-align: center;
+      float: none;
+      padding-right: 0px;
+      padding-top: 90px;
+      padding-bottom: 10px;
+      margin: 0;
+    }
+  
+    #content-wrap {
+      padding: 150px 0 100px 0;
+    }
+  
+    #content {
+      width: 250px;
+      margin: auto;
+    }
+  
+    .portfolio-image {
+      width: 230px;
+      height: 140px;
+      margin: 9px;
+    }
+
+    #image-container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+@media only screen and (min-width: 430px) and (max-width: 890px) {
+  #name {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #nav {
+    list-style: none;
+    text-align: center;
+    float: none;
+    padding-right: 0px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+
+  #content-wrap {
+    padding: 150px 0 100px 0;
+  }
+
+  #content {
+    width: 400px;
+    margin: auto;
+  }
+
+  .portfolio-image {
+    width: 380px;
+    height: 220px;
+    margin: 9px;
+  }
+
+  #image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 1270px) {
+    #content {
+      width: 1180px;
+      margin: auto;
+    }
+
+    #image-container {
+      display: flex;
+    }
+  
+    .portfolio-image {
+      width: 430px;
+      height: 195px;
+      margin: 9px;
+    }
+  }
+
