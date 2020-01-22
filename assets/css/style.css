@@ -14,11 +14,10 @@ body {
 }
 
 header {
-  height: 80px;
   background-color: white;
   top: 0;
   position: fixed;
-  display: table;
+  display: grid;
   width: 100%;
   border-bottom: 2px solid gainsboro;
   z-index: 1;
@@ -26,35 +25,55 @@ header {
 
 #name {
   background-color: lightseagreen;
-  margin-left: 150px;
-  padding-top: 20px;
-  width: 250px;
-  height: 60px;
+  padding: 20px 0px;
   text-align: center;
-  font-size: 30px;
+  margin: auto;
+  font-size: 28px;
   color: white;
   float: left;
   font-family: Cambria;
   font-weight: 550;
 }
 
+#nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+
 .links {
-  text-decoration: none;
   color: silver;
   font-size: 18px;
-  margin-right: 25px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0px 5px 0px 5px;
 }
 
 #about-link, #portfolio-link {
-  padding-right: 20px;
-  border-right: 1px solid silver;
 }
 
 #content-title {
   font-family: Cambria;
   color: lightseagreen;
+}
+
+#content {
+  margin: auto;
+  border: 1px solid silver;
+  padding: 5px 25px 25px 25px;
+  background-color: white;
+}
+
+#image-container {
+  display: grid;
+  grid-gap: 1em;
+}
+
+.portfolio-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 img {
@@ -127,59 +146,17 @@ input[type=submit] {
 }
 
 footer {
+  width: 100%;
+  height: 30px;
+  display: block;
+  position: absolute;
+  background-color: gray;
   text-align: center;
   font-size: 10px;
   color: rgb(200,200,200);
   padding-top: 30px;
   border-top: 4px solid lightseagreen;
-  display: block;
-  position: absolute;
   bottom: 0;
-  width: 100%;
-  background-color: gray;
-  height: 30px;
-}
-
-
-@media only screen and (min-width: 0px) and (max-width: 430px) {
-  #name {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  #nav {
-    list-style: none;
-    text-align: center;
-    float: none;
-    padding-right: 0px;
-    padding-top: 90px;
-    padding-bottom: 10px;
-    margin: 0;
-  }
-
-  #content-wrap {
-    padding: 150px 0 100px 0;
-  }
-
-  #content {
-    width: 650px;
-    margin: auto;
-    border: 1px solid silver;
-    padding: 5px 25px 25px 25px;
-    background-color: white;
-  }
-
-  .portfolio-image {
-    height: 140px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-  }
-
-  #image-container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 }
 
 @media only screen and (min-width: 430px) and (max-width: 890px) {
@@ -188,14 +165,12 @@ footer {
     margin-left: 0;
   }
 
+  header {
+    grid-template-rows: 2fr 1fr;
+  }
+
   #nav {
-    list-style: none;
     text-align: center;
-    float: none;
-    padding-right: 0px;
-    padding-top: 90px;
-    padding-bottom: 10px;
-    margin: 0;
   }
 
   #content-wrap {
@@ -204,34 +179,29 @@ footer {
 
   #content {
     width: 400px;
-    margin: auto;
-    border: 1px solid silver;
-    padding: 5px 25px 25px 25px;
-    background-color: white;
   }
 
   .portfolio-image {
-    height: 220px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
+    height: 250px;
   }
 
   #image-container {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1em;
   }
 }
 
 @media only screen and (min-width: 890px) and (max-width: 1270px) {
   #nav {
-    list-style: none;
-    float: right;
-    padding-right: 120px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    margin: 0;
+    padding-left: 300px;
+  }
+
+  #name {
+    padding: 20px;
+  }
+
+  header {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
   }
 
   #content-wrap {
@@ -240,34 +210,28 @@ footer {
 
   #content {
     width: 820px;
-    margin: auto;
-    border: 1px solid silver;
-    padding: 5px 25px 25px 25px;
-    background-color: white;
   }
 
   .portfolio-image {
     height: 200px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
   }
 
   #image-container {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
   }
 }
 
 @media only screen and (min-width: 1270px) and (max-width: 2400px) {
   #nav {
-    list-style: none;
-    float: right;
-    padding-right: 120px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    margin: 0;
+    padding-left: 400px;
+  }
+
+  #name {
+    padding: 20px;
+  }
+
+  header {
+    grid-template-columns: 1fr 3fr;
   }
 
   #content-wrap {
@@ -276,23 +240,14 @@ footer {
 
   #content {
     width: 1180px;
-    margin: auto;
-    border: 1px solid silver;
-    padding: 5px 25px 25px 25px;
-    background-color: white;
   }
 
   .portfolio-image {
     height: 195px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
   }
 
   #image-container {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1em;
   }
 }
 
@@ -300,23 +255,20 @@ footer {
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px)
 and (-webkit-min-device-pixel-ratio: 2) {
   header {
-    height: 200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
   }
 
   #name {
     width: 100%;
     margin-left: 0;
     font-size: 60px;
-    padding-bottom: 30px;
+    padding: 50px 0 50px 0;
   }
 
   #nav {
-    list-style: none;
     text-align: center;
     float: none;
-    padding-right: 0px;
-    padding-top: 135px;
-    margin: 0;
   }
 
   .links {
@@ -325,19 +277,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   .banner {
     font-size: 35px;
-    bottom: 20px;
+    bottom: 25px;
+    padding: 20px 0 20px 0;
   }
 
   #content-wrap {
-    padding: 250px 0 100px 0;
+    padding: 300px 0 200px 0;
   }
 
   #content {
     width: 750px;
-    margin: auto;
-    border: 1px solid silver;
-    padding: 5px 25px 25px 25px;
-    background-color: white;
   }
 
   #content-title {
@@ -346,14 +295,17 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   .portfolio-image {
     height: 450px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
   }
 
   #image-container {
-    display: grid;
     grid-template-columns: 1fr;
+  }
+
+  footer {
+    font-size: 20px;
+    padding-top: 55px;
+    border-top: 8px solid lightseagreen;
+    height: 60px;
   }
 }
 
@@ -365,13 +317,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   #nav {
-    list-style: none;
     text-align: center;
     float: none;
-    padding-right: 0px;
-    padding-top: 90px;
-    padding-bottom: 10px;
-    margin: 0;
   }
 
   #content-wrap {
@@ -380,34 +327,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   #content {
     width: 400px;
-    margin: auto;
-    border: 1px solid silver;
-    padding: 5px 25px 25px 25px;
-    background-color: white;
   }
 
   .portfolio-image {
-    position: relative;
-    background-size: cover;
-    background-position: center;
   }
 
   #image-container {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1em;
   }
 }
 
 @media only screen and (min-device-width: 890px) and (max-device-width: 1270px)
 and (-webkit-min-device-pixel-ratio: 2) {
   #nav {
-    list-style: none;
     float: right;
-    padding-right: 120px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    margin: 0;
   }
 
   #content-wrap {
@@ -416,34 +349,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   #content {
     width: 820px;
-    margin: auto;
-    border: 1px solid silver;
-    padding: 5px 25px 25px 25px;
-    background-color: white;
   }
 
   .portfolio-image {
-    position: relative;
-    background-size: cover;
-    background-position: center;
   }
 
   #image-container {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
   }
 }
 
 @media only screen and (min-device-width: 1270px) and (max-device-width: 2400px)
 and (-webkit-min-device-pixel-ratio: 2) {
   #nav {
-    list-style: none;
     float: right;
-    padding-right: 120px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    margin: 0;
   }
 
   #content-wrap {
@@ -452,22 +371,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   #content {
     width: 1180px;
-    margin: auto;
-    border: 1px solid silver;
-    padding: 5px 25px 25px 25px;
-    background-color: white;
   }
 
   .portfolio-image {
-    position: relative;
-    background-size: cover;
-    background-position: center;
   }
 
   #image-container {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1em;
   }
 }
 
