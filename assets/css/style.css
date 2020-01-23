@@ -174,7 +174,7 @@ footer {
   }
 
   #content-wrap {
-    padding: 150px 0 100px 0;
+    padding: 140px 0 100px 0;
   }
 
   #content {
@@ -190,7 +190,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 890px) and (max-width: 1270px) {
+@media only screen and (min-width: 891px) and (max-width: 1270px) {
   #nav {
     padding-left: 300px;
   }
@@ -221,7 +221,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1270px) and (max-width: 2400px) {
+@media only screen and (min-width: 1271px) and (max-width: 2400px) {
   #nav {
     padding-left: 400px;
   }
@@ -269,6 +269,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   #nav {
     text-align: center;
     float: none;
+    padding-left: 0;
   }
 
   .links {
@@ -309,7 +310,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 }
 
-@media only screen and (min-device-width: 430px) and (max-device-width: 890px
+@media only screen and (min-device-width: 431px) and (max-device-width: 890px
 and (-webkit-min-device-pixel-ratio: 2) {
   #name {
     width: 100%;
@@ -337,7 +338,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 }
 
-@media only screen and (min-device-width: 890px) and (max-device-width: 1270px)
+@media only screen and (min-device-width: 891px) and (max-device-width: 1270px)
 and (-webkit-min-device-pixel-ratio: 2) {
   #nav {
     float: right;
@@ -359,7 +360,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 }
 
-@media only screen and (min-device-width: 1270px) and (max-device-width: 2400px)
+@media only screen and (min-device-width: 1271px) and (max-device-width: 2400px)
 and (-webkit-min-device-pixel-ratio: 2) {
   #nav {
     float: right;
