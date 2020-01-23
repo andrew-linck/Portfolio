@@ -192,7 +192,7 @@ footer {
 
 @media only screen and (min-width: 891px) and (max-width: 1270px) {
   #nav {
-    padding-left: 300px;
+    padding-left: 370px;
   }
 
   #name {
@@ -223,7 +223,7 @@ footer {
 
 @media only screen and (min-width: 1271px) and (max-width: 2400px) {
   #nav {
-    padding-left: 400px;
+    padding-left: 655px;
   }
 
   #name {
