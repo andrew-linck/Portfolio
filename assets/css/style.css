@@ -50,9 +50,6 @@ header {
   padding: 0px 5px 0px 5px;
 }
 
-#about-link, #portfolio-link {
-}
-
 #content-title {
   font-family: Cambria;
   color: lightseagreen;
@@ -65,21 +62,55 @@ header {
   background-color: white;
 }
 
+#content2 {
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid silver;
+  padding: 5px 25px 25px 25px;
+  background-color: white;
+}
+
+img {
+  height: 150px;
+  padding: 0 15px 15px 0;
+}
+
+.social-media-image-container {
+  display: grid;
+  grid-gap: 1em;
+}
+
+.social-media-image {
+  background-size: cover;
+  background-position: center;
+}
+
+#github-image {
+  background-image: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/github-square-social-media-512.png");
+}
+
+#linkedin-image {
+  background-image: url("https://cdn2.iconfinder.com/data/icons/on-point-social-media/141/LinkedIn-512.png");
+}
+
+#extra-image {
+  background-image: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/github-square-social-media-512.png");
+}
+
+#extra-image {
+  background-image: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/github-square-social-media-512.png");
+}
+
 #image-container {
   display: grid;
   grid-gap: 1em;
 }
 
+
 .portfolio-image {
   position: relative;
   background-size: cover;
   background-position: center;
-}
-
-img {
-  padding: 0 15px 15px 0;
-  float: left;
-  height: 100px;
 }
 
 .about-paragraph {
@@ -177,7 +208,7 @@ footer {
     padding: 140px 0 100px 0;
   }
 
-  #content {
+  #content, #content2 {
     width: 400px;
   }
 
@@ -187,6 +218,14 @@ footer {
 
   #image-container {
     grid-template-columns: 1fr;
+  }
+  
+  .social-media-image {
+    height: 88px;
+  }
+
+  .social-media-image-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -205,10 +244,10 @@ footer {
   }
 
   #content-wrap {
-    padding: 130px 0 120px 0;
+    padding: 110px 0 120px 0;
   }
 
-  #content {
+  #content, #content2 {
     width: 820px;
   }
 
@@ -218,6 +257,14 @@ footer {
 
   #image-container {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .social-media-image {
+    height: 193px;
+  }
+
+  .social-media-image-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -235,10 +282,10 @@ footer {
   }
 
   #content-wrap {
-    padding: 130px 0 64px 0;
+    padding: 110px 0 100px 0;
   }
 
-  #content {
+  #content, #content2 {
     width: 1180px;
   }
 
@@ -247,6 +294,14 @@ footer {
   }
 
   #image-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .social-media-image {
+    height: 284px;
+  }
+
+  .social-media-image-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
@@ -286,7 +341,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding: 300px 0 200px 0;
   }
 
-  #content {
+  #content, #content2 {
     width: 750px;
   }
 
@@ -296,6 +351,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   .portfolio-image {
     height: 450px;
+  }
+
+  .image {
+    position: relative;
   }
 
   #image-container {
@@ -326,7 +385,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding: 150px 0 100px 0;
   }
 
-  #content {
+  #content, #content2 {
     width: 400px;
   }
 
@@ -348,7 +407,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding: 130px 0 64px 0;
   }
 
-  #content {
+  #content, #content2 {
     width: 820px;
   }
 
@@ -370,7 +429,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding: 130px 0 64px 0;
   }
 
-  #content {
+  #content, #content2 {
     width: 1180px;
   }
 
