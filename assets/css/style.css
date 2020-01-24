@@ -96,12 +96,12 @@ img {
   background-image: url("https://cdn2.iconfinder.com/data/icons/on-point-social-media/141/LinkedIn-512.png");
 }
 
-#extra-image {
-  background-image: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/github-square-social-media-512.png");
+#devpost-image {
+  background-image: url("https://img.icons8.com/color/240/000000/devpost.png");
 }
 
-#extra-image {
-  background-image: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/github-square-social-media-512.png");
+#twitter-image {
+  background-image: url("../../assets/images/Twitter-icon.png");
 }
 
 #image-container {
@@ -250,8 +250,12 @@ footer {
     padding: 110px 0 120px 0;
   }
 
-  #content, #content2 {
+  #content {
     width: 820px;
+  }
+
+  #content2 {
+    width: 410px;
   }
 
   .portfolio-image {
@@ -263,7 +267,7 @@ footer {
   }
 
   .social-media-image {
-    height: 193px;
+    height: 91px;
   }
 
   .social-media-image-container {
@@ -288,8 +292,12 @@ footer {
     padding: 110px 0 100px 0;
   }
 
-  #content, #content2 {
+  #content {
     width: 1180px;
+  }
+
+  #content2 {
+    width: 410px;
   }
 
   .portfolio-image {
@@ -301,7 +309,7 @@ footer {
   }
 
   .social-media-image {
-    height: 284px;
+    height: 91px;
   }
 
   .social-media-image-container {
