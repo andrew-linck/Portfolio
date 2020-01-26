@@ -161,7 +161,7 @@ hr {
   color: silver;
 }
 
-input[type=text], textarea[type=text] {
+input[type=text], textarea[type=text], input[type=email] {
   width: 93.5%;
   padding: 10px;
   margin-bottom: 20px;
@@ -180,7 +180,7 @@ input[type=submit] {
   padding: 8px 20px;
 }
 
-input[type=text], textarea[type=text], label {
+input[type=text], input[type=email], textarea[type=text], label {
   line-height: 2em;
 }
 
@@ -399,7 +399,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   
-  input[type=text], textarea[type=text] {
+  input[type=text], textarea[type=text], input[type=email] {
     width: 92.5%;
     padding: 20px;
     margin-bottom: 40px;
@@ -416,7 +416,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     padding: 16px 40px;
   }
 
-  p, input[type=text], textarea[type=text], label {
+  p, input[type=text], input[type=email], textarea[type=text], label {
     line-height: 2em;
   }
 

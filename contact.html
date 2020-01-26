@@ -2,6 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
   <head>
   <body>
     <header>
@@ -17,22 +19,29 @@
         <div id="content">
           <h1 id="content-title">Contact</h1>
           <hr>
-          <form id="contact">
+          <form id="contact" action="https://formspree.io/xwklgqjn" method="POST">
             <label for="first-name">First Name</label>
             <br>
-            <input type="text" placeholder="What is your first name?">
+            <input type="text" id="first-name" placeholder="What is your first name?">
             <br>
 
             <label for="email">Email</label>
             <br>
-            <input type="text" placeholder="What is your email">
+            <input type="email" id="email" placeholder="What is your email?">
+            <br>
+
+            <label for="subject">Subject</label>
+            <br>
+            <input type="text" id="subject" placeholder="What is the subject?">
             <br>
 
             <label for="message">Message</label>
             <br>
-            <textarea type="text" placeholder="What is your message?"></textarea>
+            <textarea type="text" id="message" placeholder="What is your message?"></textarea>
 
-            <input type="submit" value="Submit">
+            <div id="status"></div></br>
+
+            <input type="submit" value="Submit" id="submit">
           </form>
         </div>
       </div>
