@@ -89,15 +89,15 @@ img {
 }
 
 #github-image {
-  background-image: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/github-square-social-media-512.png");
+  background-image: url("../../assets/images/Github-icon.png");
 }
 
 #linkedin-image {
-  background-image: url("https://cdn2.iconfinder.com/data/icons/on-point-social-media/141/LinkedIn-512.png");
+  background-image: url("../../assets/images/Linkedin-icon.png");
 }
 
 #devpost-image {
-  background-image: url("https://img.icons8.com/color/240/000000/devpost.png");
+  background-image: url("../../assets/images/Devpost-icon.png");
 }
 
 #twitter-image {
@@ -370,6 +370,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   #image-container {
     grid-template-columns: 1fr;
+  }
+
+  .social-media-image {
+    height: 175px;
+  }
+
+  .social-media-image-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   footer {
