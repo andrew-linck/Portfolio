@@ -329,6 +329,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   header {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
+    border-bottom: 4px solid gainsboro;
   }
 
   #name {
@@ -370,6 +371,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   #content, #content2 {
     width: 750px;
+    border: 2px solid silver;
+    padding: 10px 50px 50px 50px;
   }
 
   #content-title {
