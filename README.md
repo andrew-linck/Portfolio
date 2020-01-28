@@ -1,4 +1,2 @@
 # Basic-Portfolio
-Basic Portfolio
-
-Nearly finished.
+Completed, but still perfecting the styling to make it look good.
